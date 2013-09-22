@@ -1,0 +1,17 @@
+#N canvas 456 22 464 403 10;
+#X declare -path ./ -path ../../;
+#X obj 150 107 utils/get.time;
+#X obj 30 27 declare -path ./ -path ../../;
+#X obj 30 237 pd-dom route-test;
+#X msg 140 187 add route-abs;
+#X msg 188 249 vis \$1;
+#X obj 188 219 hradio 15 1 0 8 empty empty empty 0 -8 0 10 -262144
+-1 -1 0;
+#X obj 35 176 s route-test_bus;
+#X msg 35 146 0 \$1;
+#X floatatom 35 116 5 0 0 0 - - -;
+#X connect 3 0 2 1;
+#X connect 4 0 2 1;
+#X connect 5 0 4 0;
+#X connect 7 0 6 0;
+#X connect 8 0 7 0;

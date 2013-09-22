@@ -1,0 +1,15 @@
+#N canvas 456 22 792 540 10;
+#X declare -path ./ -path ../../;
+#X obj 150 107 utils/get.time;
+#X obj 30 27 declare -path ./ -path ../../;
+#X obj 30 237 pd-dom simple-test;
+#X msg 188 249 vis \$1;
+#X obj 188 219 hradio 15 1 0 8 empty empty empty 0 -8 0 10 -262144
+-1 -1 0;
+#X msg 140 187 add simple-abs;
+#X obj 32 161 s foo;
+#X msg 32 131 foo bar;
+#X connect 3 0 2 1;
+#X connect 4 0 3 0;
+#X connect 5 0 2 1;
+#X connect 7 0 6 0;

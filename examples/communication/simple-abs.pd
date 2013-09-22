@@ -1,0 +1,6 @@
+#N canvas 373 359 541 285 10;
+#X obj 56 24 pddom.from \$1 \$2;
+#X obj 56 214 pddom.to \$1 \$2;
+#X obj 56 104 print \$1.\$2;
+#X obj 56 74 r foo;
+#X connect 3 0 2 0;
